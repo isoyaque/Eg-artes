@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Produtos</title>
+    <style>
+        .produto {
+            display: inline-block;
+            width: 200px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+        .produto img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1>Produtos</h1>
+    
+    <label for="tipoProduto">Filtrar por tipo:</label>
+    <select id="tipoProduto">
+        <option value="todos">Todos</option>
+        <option value="topper">Topper</option>
+        <option value="lembrancinha">Lembrancinha</option>
+        <option value="caixa">Caixa</option>
+    </select>
+
+    <div id="lista-produtos"></div>
+
+    <script src="produtos.js"></script>
+</body>
+</html>
